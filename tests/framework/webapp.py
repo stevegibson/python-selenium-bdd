@@ -13,12 +13,12 @@ class WebApp:
         return cls.instance
 
     def __init__(self):
-        if str(settings['browser']).lower() is "firefox":
+        if str(settings['browser']).lower() == "firefox":
             self.driver = webdriver.Firefox()
-        elif str(settings['browser']).lower() is "chrome":
+        elif str(settings['browser']).lower() == "chrome":
             self.driver = webdriver.Chrome()
         else:
-            self.driver = webdriver.Firefox()
+            self.driver = webdriver.Chrome()
 
     def get_driver(self):
         return self.driver

@@ -3,3 +3,8 @@ A Python based Test framework including BDD, Selenium Webdriver and Page Object 
 
 Read more about how to use this repository in the medium article: [BDD, Cucumber and Selenium WebDriver based Test Automation Framework in Python](https://medium.com/@hmurari/bdd-cucumber-and-selenium-webdriver-based-test-automation-framework-in-python-ae092a7581d3)
 
+
+# pip install behave
+# pip install selenium
+
+# cd into features directory, then run 'behave'
