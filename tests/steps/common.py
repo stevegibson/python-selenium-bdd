@@ -2,7 +2,7 @@ from behave import given, when, then
 from framework.webapp import webapp
 
 
-@given(u'I load the website')
+@given(u'I navigate to the saucedemo site')
 def step_impl_load_website(context):
     webapp.load_website()
 

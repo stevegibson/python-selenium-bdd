@@ -1,5 +1,5 @@
 from framework.webapp import webapp
-
+from selenium.webdriver.common.by import By
 class LoginPage():
     instance = None
 
@@ -13,7 +13,8 @@ class LoginPage():
         self.driver = webapp.get_driver()
     
     def login(self, user_name, password):
-        self.driver.get("https://www.saucedemo.com")
-        # then enter uid/pw and click Login
-
+        self.driver.find_element(By.ID, 'user-name').send_keys(user_name)
+        self.driver.find_element(By.ID, 'password').send_keys(password)
+        self.driver.find_element(By.ID, 'login-button').click()
+        
 login_page = LoginPage.get_instance()
